@@ -32,7 +32,7 @@ void main() {
       sobrenomeList.add(sobrenome);
       print("Família: $sobrenome");
       for (int i = 0; i < pacientesTemp.length; i++) {
-        if (sobrenome.toLowerCase() == pacientesTemp[0].split(" ").last.toLowerCase()) {
+        if (sobrenome.toUpperCase() == pacientesTemp[0].split(" ").last.toLowerCase()) {
           print("${pacientesTemp[0]}");
         }
       }
