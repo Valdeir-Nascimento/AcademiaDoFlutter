@@ -2,7 +2,7 @@
 // Apresente a quantidade de pacientes com mais de 20 anos
 // Agrupar os pacientes por familia(considerar o sobrenome) apresentar por familia.
 
-void main(List<String> args) {
+void main() {
   var pacientes = [
     'Rodrigo Rahman|35|desenvolvedor|SP',
     'Manoel Silva|12|estudante|MG',
