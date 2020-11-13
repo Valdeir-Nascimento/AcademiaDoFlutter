@@ -16,6 +16,7 @@ void main() {
   
   List<String> sobrenomeList = [];
   List<String> pacientesTemp;
+  List<String> pacienteList;
   String sobrenome;
   int qtde = 0;
   
@@ -30,14 +31,17 @@ void main() {
 
     if (!sobrenomeList.contains(sobrenome)) {
       sobrenomeList.add(sobrenome);
-      print("Família: $sobrenome");
-      for (int i = 0; i < pacientesTemp.length; i++) {
-        if (sobrenome.toUpperCase() == pacientesTemp[0].split(" ").last.toLowerCase()) {
-          print("${pacientesTemp[0]}");
+      print("\nFamília: $sobrenome");
+      for (var p in pacientes) {
+        pacienteList = p.split("|");
+        if (sobrenome.toLowerCase() == pacienteList[0].split(' ').last.toLowerCase()) {
+          print("${pacienteList[0]}");
         }
       }
+    
+
     }
   }
 
-  print("Quantidade pacientes com mais de 20 anos: $qtde");
+  print("\nQuantidade pacientes com mais de 20 anos: $qtde");
 }
