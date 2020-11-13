@@ -38,8 +38,6 @@ void main() {
           print("${pacienteList[0]}");
         }
       }
-    
-
     }
   }
 
